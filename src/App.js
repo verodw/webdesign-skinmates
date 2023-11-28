@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './Home';
 
-function App() {
+const App = () => {
+  const slides = [
+    { url: "http://localhost:3000/banner1.jpeg", title: "Banner1" },
+    { url: "http://localhost:3000/banner2.jpeg", title: "Banner2" },
+    { url: "http://localhost:3000/banner3.jpeg", title: "Banner3" },
+    { url: "http://localhost:3000/banner4.jpeg", title: "Banner4" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
+      {/* Home Section */}
+      <Home />
+      
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
