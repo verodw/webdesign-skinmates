@@ -87,6 +87,10 @@ header {
   border-bottom: 1px solid #ccc;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
 
 .content-container {
   padding-top: 50px; /* Tinggi header */

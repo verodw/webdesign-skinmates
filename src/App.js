@@ -15,13 +15,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" component={Login} />
-        <Route path="/home" component={Home} />
-        <Route path="/register" component={Register} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
         {/* Home Section */}
-        <Home />
+        {/* <Home /> */}
       </div>
     </Router>
   );

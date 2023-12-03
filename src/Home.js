@@ -40,7 +40,7 @@ const Home = () => {
         <input type="text" placeholder="Find Products..." style={{ flex: 2, marginLeft: '10px', padding: '10px', fontSize: '16px' }} />
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>
-        <button style={{ padding: '15px', fontSize: '16px', fontWeight: 'bold', background: 'pink', color: '#fff', border: 'none'}}>Login or Signup</button>
+        <button style={{ padding: '15px', fontSize: '16px', fontWeight: 'bold', background: 'pink', color: '#fff', border: 'none'}}><a href='/login'>Login or Signup</a></button>
         <button style={{ padding: '15px', fontSize: '16px', background: 'transparent', border: 'none' }}>
           <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" style={{ width: '30px', height: 'auto' }} />
         </button>
