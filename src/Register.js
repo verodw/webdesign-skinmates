@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     try {
@@ -17,7 +17,7 @@ const Register = () => {
 
       // Jika registrasi berhasil, arahkan ke halaman home
       if (response.data.success) {
-        history.push('/home');
+        navigate.push('/home');
       } else {
         // Tampilkan pesan error
         alert('Registration failed. Please try again.');

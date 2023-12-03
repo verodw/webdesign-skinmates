@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Register from './Register';
 import Login from './Login';
 import Home from './Home';
 
@@ -13,11 +14,11 @@ const App = () => {
 
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/login" component={Login} />
         <Route path="/home" component={Home} />
         <Route path="/register" component={Register} />
-      </Switch>
+      </Routes>
       <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
         {/* Home Section */}
         <Home />
