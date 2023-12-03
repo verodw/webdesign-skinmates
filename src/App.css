@@ -13,6 +13,51 @@
   }
 }
 
+/* biar responsif*/
+/* Menyesuaikan header untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+/* Menyesuaikan margin-top pada slider dan lebar gambar slider untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  .slider-container {
+    margin-top: 20px;
+  }
+
+  .slider-image {
+    width: 100%;
+  }
+}
+
+/* Menyesuaikan lebar dan tinggi item kategori untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    width: 70px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+/* Menyesuaikan lebar input pencarian dan ukuran font untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    flex: 1;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Login from './Login';
 import Home from './Home';
 
 const App = () => {
@@ -10,19 +12,18 @@ const App = () => {
   ];
 
   return (
-
-    <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
-      {/* Home Section */}
-      <Home />
-      
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/home" component={Home} />
+        <Route path="/register" component={Register} />
+      </Switch>
+      <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
+        {/* Home Section */}
+        <Home />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
-
-
-
-
-
-
