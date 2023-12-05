@@ -1,0 +1,66 @@
+.button-and-notif {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content-container {
+  padding-top: 50px; /* Tinggi header */
+  padding-bottom: 50px; /* Tinggi footer */
+}
+
+.slider-container {
+  padding-bottom: 20px; /* Beri ruang di bawah slider */
+}
+
+.makeup-review-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 10px; /* Menambahkan border-radius untuk membuatnya bulat */
+}
+
+
+.fixed-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: #fff;
+  z-index: 2;
+}
+
+
+.category-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.category-item {
+  width: 90px;
+  height: 50px;
+  background-color: #c44108;
+  color: #fff;
+  border-radius: 20px; /* membuat bentuk oval */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+  background-color: #e33e8b; 
+}

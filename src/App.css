@@ -1,10 +1,15 @@
-.App {
-  text-align: center;
+:root {
+  --white: #fff;
+  --grey: #ccc;
+  --lightgrey: #f3f3f3;
+  --black: #000;
+  --lightpink: #FEE9EE;
+  --reddishpink: #FEC3BB;
+  --darkpink: #CC848A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -58,102 +63,70 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 header {
-  padding: 10px;
   border-bottom: 1px solid #ccc;
+  position: fixed; 
+  top: 0; left: 0; right: 0; 
+  padding: 35px;  
+  background: #ffff; 
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  height: 50px; 
+  z-index: 1;
+  box-shadow: 0px 4px 20px var(--lightgrey);
 }
 
-button a {
-  color: white;
-  text-decoration: none;
-}
-
-.content-container {
-  padding-top: 50px; /* Tinggi header */
-  padding-bottom: 50px; /* Tinggi footer */
-}
-
-.slider-container {
-  padding-bottom: 20px; /* Beri ruang di bawah slider */
-}
-
-.makeup-review-container {
-  max-height: 300px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+button {
+  padding: 15px; 
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
   border-radius: 10px; /* Menambahkan border-radius untuk membuatnya bulat */
 }
 
-
-.fixed-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background: #fff;
-  z-index: 2;
+a {
+  text-decoration: none;
 }
 
-
-.category-section {
-  text-align: center;
-  margin-top: 20px;
+.icon {
+  width: 30px;
+  height: auto;
 }
 
-.categories {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+.img-logo {
+  width: 150px;
+  height: auto;
 }
 
-.category-item {
-  width: 90px;
-  height: 50px;
-  background-color: #c44108;
-  color: #fff;
-  border-radius: 20px; /* membuat bentuk oval */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.pink-button {
+  background: var(--reddishpink);
 }
 
-.category-item:hover {
-  background-color: #e33e8b; 
+.icon-button {
+  padding: 15px;
+  background: transparent;
 }
 
+.pink-button a {
+  color: var(--white);
+}
 
+.search-bar {
+  flex: 2;
+  margin-left: 10px;
+  padding: 15px;
+  font-size: 16px;
+  max-width: 600px;
+  width: auto;
+  border-radius: 10px;
+  border: 1.5px solid var(--grey);
+}
 
+.search-bar:focus {
+  outline: none;
+  border: 1.5px solid var(--reddishpink);
+}
 
-
-
+/* beberapa elemen yang cuma khusus home gw pindahin ke home.css biar lebih rapi */
+/* yg disini buat elemen yg bakal dipake general kek button, input, logo, dll */
