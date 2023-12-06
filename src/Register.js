@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './App.css';
+import './RegisLogin.css';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -31,24 +33,26 @@ const Register = () => {
   return (
     <div>
       <h2>Register</h2>
-      <label>Email:</label>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <form>
+        <label>Email:</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
-      <label>Password:</label>
-      <input
-        type={showPassword ? 'text' : 'password'}
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <label>
-        <input type="checkbox" onChange={() => setShowPassword(!showPassword)} /> Show Password
-      </label>
+        <label>Password:</label>
+        <input
+          type={showPassword ? 'text' : 'password'}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <label>
+          <input type="checkbox" onChange={() => setShowPassword(!showPassword)} /> Show Password
+        </label>
 
-      <button onClick={handleRegister}>Register</button>
+        <button onClick={handleRegister}>Register</button>
 
-      <p>
-        Already have an account? <a href="/login">Login</a>
-      </p>
+        <p>
+          Already have an account? <a href="/login">Login</a>
+        </p>
+      </form>
     </div>
   );
 };
