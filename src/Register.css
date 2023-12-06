@@ -1,0 +1,351 @@
+.register {
+    background-color: #e2eeff33;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .register .div {
+    background-color: #e2eeff33;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .register .text-wrapper {
+    color: #000000;
+    font-family: "Lato-Medium", Helvetica;
+    font-size: 48px;
+    font-weight: 500;
+    left: 534px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 105px;
+    width: 516px;
+  }
+  
+  .register .frame {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 11.7px;
+    justify-content: center;
+    left: 760px;
+    position: absolute;
+    top: 232px;
+  }
+  
+  .register .line {
+    height: 300px;
+    position: relative;
+    width: 1.3px;
+  }
+  
+  .register .text-wrapper-2 {
+    color: #000000;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 20.8px;
+    font-weight: 400;
+    height: 28.6px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: 37.7px;
+  }
+  
+  .register .overlap {
+    height: 75px;
+    left: 206px;
+    position: absolute;
+    top: 213px;
+    width: 458px;
+  }
+  
+  .register .rectangle {
+    background-color: #fbfbfb;
+    border: 1.3px solid;
+    border-color: #ff5959;
+    border-radius: 19.5px;
+    box-shadow: 0px 2.6px 1.3px #0000001f;
+    height: 46px;
+    left: 26px;
+    position: absolute;
+    top: 30px;
+    width: 432px;
+  }
+  
+  .register .text-wrapper-3 {
+    color: #00000080;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 18.2px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 164px;
+  }
+  
+  .register .overlap-group {
+    height: 75px;
+    left: 206px;
+    position: absolute;
+    top: 477px;
+    width: 458px;
+  }
+  
+  .register .eye-off {
+    height: 25px !important;
+    left: 403px !important;
+    position: absolute !important;
+    top: 41px !important;
+    width: 29px !important;
+  }
+  
+  .register .overlap-2 {
+    height: 72px;
+    left: 232px;
+    position: absolute;
+    top: 572px;
+    width: 432px;
+  }
+  
+  .register .rectangle-2 {
+    background-color: #fbfbfb;
+    border: 1.3px solid;
+    border-color: #ff5959;
+    border-radius: 19.5px;
+    box-shadow: 0px 2.6px 1.3px #0000001f;
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 27px;
+    width: 432px;
+  }
+  
+  .register .text-wrapper-4 {
+    color: #00000080;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 18.2px;
+    font-weight: 400;
+    left: 4px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 164px;
+  }
+  
+  .register .eye-off-instance {
+    height: 25px !important;
+    left: 377px !important;
+    position: absolute !important;
+    top: 36px !important;
+    width: 29px !important;
+  }
+  
+  .register .overlap-3 {
+    height: 75px;
+    left: 189px;
+    position: absolute;
+    top: 386px;
+    width: 475px;
+  }
+  
+  .register .rectangle-3 {
+    background-color: #fbfbfb;
+    border: 1.3px solid;
+    border-color: #ff5959;
+    border-radius: 19.5px;
+    box-shadow: 0px 2.6px 1.3px #0000001f;
+    height: 46px;
+    left: 43px;
+    position: absolute;
+    top: 30px;
+    width: 432px;
+  }
+  
+  .register .overlap-4 {
+    height: 75px;
+    left: 206px;
+    position: absolute;
+    top: 300px;
+    width: 458px;
+  }
+  
+  .register .group {
+    height: 66px;
+    left: 232px;
+    position: absolute;
+    top: 793px;
+    width: 428px;
+  }
+  
+  .register .div-wrapper {
+    background-color: #cc848a;
+    border-radius: 19.5px;
+    box-shadow: 0px 2.6px 1.3px #0000001f;
+    height: 66px;
+    position: relative;
+    width: 426px;
+  }
+  
+  .register .text-wrapper-5 {
+    color: #fafafa;
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 26px;
+    font-weight: 700;
+    left: 29px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 17px;
+    width: 365px;
+  }
+  
+  .register .frame-2 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 34px;
+    left: 894px;
+    position: absolute;
+    top: 405px;
+  }
+  
+  .register .button {
+    all: unset;
+    align-items: flex-start;
+    background-color: var(--neutralgray-0);
+    border: 1.3px solid;
+    border-color: #ffffff;
+    border-radius: 19.5px;
+    box-shadow: inset 3.9px 6.5px 7.8px #0000000f, 2.6px 5.2px 5.85px #0000001a;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 13px;
+    padding: 7.8px 35.1px;
+    position: relative;
+    width: 390px;
+  }
+  
+  .register .frame-3 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 76.7px;
+    position: relative;
+  }
+  
+  .register .icon {
+    height: 27.3px;
+    position: relative;
+    width: 27.3px;
+  }
+  
+  .register .label {
+    color: var(--neutral-gray-900);
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 19.5px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 31.2px;
+    margin-top: -1.3px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .register .already-have-an {
+    color: transparent;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 18.2px;
+    font-weight: 400;
+    height: 35.1px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: 301.6px;
+  }
+  
+  .register .span {
+    color: #00000080;
+  }
+  
+  .register .text-wrapper-6 {
+    color: #000000;
+    font-family: "Lato-Bold", Helvetica;
+    font-weight: 700;
+  }
+  
+  .register .group-2 {
+    height: 36px;
+    left: 245px;
+    position: absolute;
+    top: 682px;
+    width: 366px;
+  }
+  
+  .register .control-help {
+    background-color: #f6ece9;
+    border: 1.3px solid;
+    border-color: #00000080;
+    border-radius: 6.5px;
+    height: 27px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 4px;
+    width: 30px;
+  }
+  
+  .register .check-instance {
+    height: 26px !important;
+    left: 1px !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 29px !important;
+  }
+  
+  .register .i-agree-to-the-terms {
+    -webkit-text-stroke: 1.3px #000000;
+    color: transparent;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 17.6px;
+    font-weight: 400;
+    height: 36px;
+    left: 47px;
+    letter-spacing: -0.26px;
+    line-height: normal;
+    position: absolute;
+    text-shadow: 0px 5.2px 5.2px #00000040;
+    top: -1px;
+    width: 316px;
+  }
+  
+  .register .text-wrapper-7 {
+    color: #000000;
+  }
+  
+  .register .text-wrapper-8 {
+    color: #d69f4c;
+  }
+  
+  .register .white-black-elegant {
+    height: 120px;
+    left: 35px;
+    position: absolute;
+    top: 35px;
+    width: 112px;
+  }
+  
