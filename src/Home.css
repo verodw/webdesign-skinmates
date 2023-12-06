@@ -49,18 +49,21 @@
 }
 
 .category-item {
-  width: 90px;
+  width: 120px;
   height: 50px;
-  background-color: #c44108;
-  color: #fff;
-  border-radius: 20px; /* membuat bentuk oval */
+  background-color: #ffff;
+  color: #FF707C;
+  border-radius: 15px; /* membuat bentuk oval */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 3px solid #FFA8AF;
+  font-weight: bold;
 }
 
 .category-item:hover {
-  background-color: #e33e8b; 
+  background-color: #FF707C; 
+  color: #FFff;
 }

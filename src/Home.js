@@ -39,7 +39,7 @@ const Home = () => {
         <input type="text" placeholder="Find Products..." className='search-bar'/>
 
         <div className='button-and-notif'>
-            <button className='pink-button' style={{ }}><a href='/login'>Login or Signup</a></button>
+            <button className='pink-button' style={{ }}><a href='/login'>Login / Signup</a></button>
             <button className='icon-button'>
               <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" className='icon'/>
             </button>

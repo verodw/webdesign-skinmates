@@ -7,6 +7,8 @@
   --orangepink: #F7C9C8;
   --darkpink: #CC848A;
   --redpink: #FF5959;
+  --pink1: #FF707C;
+  --pink2: #D1666F;
 }
 
 
@@ -107,11 +109,11 @@ a {
 }
 
 .pink-button {
-  background: var(--orangepink);
+  background: var(--pink1);
 }
 
 .pink-button:hover {
-  background-color: var(--redpink);
+  background-color: var(--pink2);
 }
 
 .icon-button {
