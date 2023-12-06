@@ -19,10 +19,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}>
+      {/* <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}> */}
         {/* Home Section */}
         {/* <Home /> */}
-      </div>
+      {/* </div> */}
     </Router>
   );
 };

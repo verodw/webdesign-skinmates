@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './App.css';
+import './RegisLogin.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -35,25 +37,29 @@ const Login = () => {
   return (
     <div>
       <h2>Login</h2>
-      <label>Email:</label>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+      <form>
+        <label>Email:</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        
+        <label>Password:</label>
+        <input
+          type={showPassword ? 'text' : 'password'}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <label>
+          <input type="checkbox" onChange={() => setShowPassword(!showPassword)} /> Show Password
+        </label>
+
+        <button onClick={handleLogin}>Login</button>
+        <button onClick={handleGoogleLogin}>Continue with Google</button>
+
+        <p>
+          Don't have an account? <a href="/register">Register</a>
+        </p>
+      </form>
       
-      <label>Password:</label>
-      <input
-        type={showPassword ? 'text' : 'password'}
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <label>
-        <input type="checkbox" onChange={() => setShowPassword(!showPassword)} /> Show Password
-      </label>
-
-      <button onClick={handleLogin}>Login</button>
-      <button onClick={handleGoogleLogin}>Continue with Google</button>
-
-      <p>
-        Don't have an account? <a href="/register">Register</a>
-      </p>
     </div>
   );
 };
