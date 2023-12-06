@@ -4,9 +4,16 @@
   --lightgrey: #f3f3f3;
   --black: #000;
   --lightpink: #FEE9EE;
-  --reddishpink: #FEC3BB;
+  --orangepink: #F7C9C8;
   --darkpink: #CC848A;
+  --redpink: #FF5959;
 }
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 .App {
   text-align: center;
@@ -100,7 +107,11 @@ a {
 }
 
 .pink-button {
-  background: var(--reddishpink);
+  background: var(--orangepink);
+}
+
+.pink-button:hover {
+  background-color: var(--redpink);
 }
 
 .icon-button {
@@ -125,7 +136,7 @@ a {
 
 .search-bar:focus {
   outline: none;
-  border: 1.5px solid var(--reddishpink);
+  border: 1.5px solid var(--orangepink);
 }
 
 /* beberapa elemen yang cuma khusus home gw pindahin ke home.css biar lebih rapi */

@@ -55,7 +55,7 @@ const Home = () => {
       {/* Text Section */}
     
       <div className="category-section">
-      <h1 style={{ textAlign: 'center', margin: '50px', fontFamily: 'Poppins, sans-serif' }}>
+      <h1 style={{margin: '50px'}}>
         Begin your beauty journey here.
       </h1>
       </div>
