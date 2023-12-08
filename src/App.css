@@ -98,10 +98,35 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 10px; /* Menambahkan border-radius untuk membuatnya bulat */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  color: var(--black);
+}
+
+input {
+  width: 100%;
+  border: 1.5px solid var(--orangepink);
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+
+input:focus {
+  outline: none;
+  cursor: var(--redpink);
+  border-color: var(--redpink);
+}
+
+.input-check {
+  width: auto;
+  transform: scale(1.5);
 }
 
 .icon {
@@ -110,16 +135,25 @@ a {
 }
 
 .img-logo {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 120px;
 }
 
 .pink-button {
   background: var(--pink1);
+  color: var(--white);
 }
 
 .pink-button:hover {
   background-color: var(--pink2);
+}
+
+.light-button {
+  background: var(--white);
+}
+
+.light-button:hover {
+  background: var(--lightgrey);
 }
 
 .icon-button {

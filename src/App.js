@@ -13,17 +13,15 @@ const App = () => {
   ];
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-      {/* <div style={{ background: 'url("/bgskinmates.png") no-repeat center center fixed', backgroundSize: 'cover', height: '200vh' }}> */}
-        {/* Home Section */}
-        {/* <Home /> */}
-      {/* </div> */}
-    </Router>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

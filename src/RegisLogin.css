@@ -1,0 +1,81 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px;
+    gap: 20px;
+    height: 100vh;
+}
+
+.register h2 {
+    text-align: center;
+    margin: 0 0;
+}
+
+.navbar-regis {
+    width: 100%;
+}
+
+.regis-section { 
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.register label {
+    padding: 2px 16px;
+}
+
+.checkbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.divider-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.register hr {
+    height: 100%;
+}
+
+.register .login-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register button {
+    width: 100%;
+}
+
+.register p {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.login-section img {
+    width: 60%;
+}

@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch makeup reviews from the API
-    axios.get('http://makeup-api.herokuapp.com/api/v1/products.json')
+    axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=0')
       .then(response => {
         setMakeupReviews(response.data);
       })
@@ -76,11 +76,17 @@ const Home = () => {
 
 
       {/* Makeup Reviews Section */}
-    
-      <div className="makeup-review-container">
+      <MakeupReviewSection makeupReviews={makeupReviews} />
+      {/* <div className="makeup-review-container">
         <MakeupReviewSection makeupReviews={makeupReviews} />
-      </div>
+      </div> */}
       
+      <footer>
+        <h1>Skinmates</h1>
+        <a>Home</a>
+        <a>Reviews</a>
+        <a>Profile</a>
+      </footer>
 
     </div>
   );
