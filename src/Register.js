@@ -74,12 +74,12 @@ const Register = () => {
             {/* <img className="line" alt="Line" src="line-2.svg" /> */}
         </div>
 
-        <div className='login-section'>
+        <div className='login-part'>
           <button className="light-button"><img src='/logo-google.png' className='icon'></img><a href='/'>Continue with Google</a></button>
           <p>
             Already have an account? <a href="/login">Login</a>
           </p>
-          <img src='/login-pic.png' className='cover'></img>
+          <img src='/regis-pic.png' className='cover'></img>
         </div>
       </div>
 
