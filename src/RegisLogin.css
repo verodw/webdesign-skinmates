@@ -76,6 +76,6 @@ form {
     gap: 10px;
 }
 
-.login-section img {
+.login-section .cover {
     width: 60%;
 }
