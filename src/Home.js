@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch makeup reviews from the API
-    axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=0')
+    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.5&rating_less_than=4.2&price_greater_than=7.5&price_less_than=9.5')
       .then(response => {
         setMakeupReviews(response.data);
       })
@@ -82,10 +82,17 @@ const Home = () => {
       </div> */}
       
       <footer>
-        <h1>Skinmates</h1>
-        <a>Home</a>
-        <a>Reviews</a>
-        <a>Profile</a>
+        <div className='company-name'>
+          <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
+          <h1>Skinmates</h1>
+        </div>
+        <div className='footer-links'>
+          <a>Home</a><hr></hr>
+          <a>Reviews</a><hr></hr>
+          <a>Profile</a>
+        </div>
+        {/* <hr></hr> */}
+        <p>Copyright ©2023 Skinmates. All rights reserved.</p>
       </footer>
 
     </div>

@@ -24,6 +24,7 @@ const MakeupReview = ({ makeupReviews }) => (
         </div>
       ))}
     </div>
+    <a className='see-more' href=''>See more<img src='/arrow-next.png'></img></a>
   </div>
 );
 

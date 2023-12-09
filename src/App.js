@@ -26,3 +26,20 @@ const App = () => {
 };
 
 export default App;
+
+const Navbar = () => {
+  return(
+    <header>
+        <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
+
+        <input type="text" placeholder="Find Products..." className='search-bar'/>
+
+        <div className='button-and-notif'>
+            <button className='pink-button' style={{ }}><a href='/login'>Login / Signup</a></button>
+            <button className='icon-button'>
+              <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" className='icon'/>
+            </button>
+        </div> 
+      </header>
+  )
+}

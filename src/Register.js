@@ -13,6 +13,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = async () => {
+    console.log(name, email, password)
     try {
       const response = await axios.post('#', {
         name,
@@ -22,7 +23,7 @@ const Register = () => {
 
       // Jika registrasi berhasil, arahkan ke halaman home
       if (response.data.success) {
-        navigate.push('/home');
+        navigate.push('/');
       } else {
         // Tampilkan pesan error
         alert('Registration failed. Please try again.');
