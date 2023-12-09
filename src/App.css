@@ -115,7 +115,7 @@ a {
   color: var(--black);
 }
 
-a:hover, .link:hover {
+a:hover {
   text-shadow: 0px 4px 8px rgba(204, 132, 138, 0.5);
 }
 

@@ -77,7 +77,7 @@ const Register = () => {
         <div className='login-section'>
           <button className="light-button"><img src='/logo-google.png' className='icon'></img><a href='/'>Continue with Google</a></button>
           <p>
-            Already have an account? <a href="/login" className='link'>Login</a>
+            Already have an account? <a href="/login">Login</a>
           </p>
           <img src='/login-pic.png' className='cover'></img>
         </div>
