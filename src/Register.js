@@ -13,25 +13,26 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = async () => {
-    console.log(name, email, password)
-    try {
-      const response = await axios.post('#', {
-        name,
-        email,
-        password,
-      });
+    navigate('/home');
+    // console.log(name, email, password)
+    // try {
+    //   const response = await axios.post('#', {
+    //     name,
+    //     email,
+    //     password,
+    //   });
 
-      // Jika registrasi berhasil, arahkan ke halaman home
-      if (response.data.success) {
-        navigate.push('/');
-      } else {
-        // Tampilkan pesan error
-        alert('Registration failed. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error during registration:', error);
-      alert('An error occurred. Please try again later.');
-    }
+    //   // Jika registrasi berhasil, arahkan ke halaman home
+    //   if (response.data.success) {
+    //     navigate.push('/');
+    //   } else {
+    //     // Tampilkan pesan error
+    //     alert('Registration failed. Please try again.');
+    //   }
+    // } catch (error) {     
+    //   console.error('Error during registration:', error);
+    //   alert('An error occurred. Please try again later.');
+    // }
   };
 
   return (

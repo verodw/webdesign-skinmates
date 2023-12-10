@@ -26,7 +26,7 @@ const Navbar = ({status}) => {
                 <input type="text" placeholder="Find Products..." className='search-bar'/>
 
                 <div className='button-and-notif'>
-                    Profile
+                    <a href='/profile'>Profile</a>
                 </div> 
             </header>
         );
