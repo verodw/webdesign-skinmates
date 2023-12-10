@@ -93,3 +93,5 @@ export const Review = () => {
     </div>
   );
 };
+
+export default Review;

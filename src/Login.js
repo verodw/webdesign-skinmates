@@ -11,23 +11,24 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    try {
-      const response = await axios.post('#', {
-        email,
-        password,
-      });
+    navigate('/home');
+    // try {
+    //   const response = await axios.post('#', {
+    //     email,
+    //     password,
+    //   });
 
-      // Jika autentikasi berhasil, arahkan ke halaman home
-      if (response.data.success) {
-        navigate.push('/home');
-      } else {
-        // Tampilkan pesan error 
-        alert('Login failed. Please check your credentials.');
-      }
-    } catch (error) {
-      console.error('Error during login:', error);
-      alert('An error occurred. Please try again later.');
-    }
+    //   // Jika autentikasi berhasil, arahkan ke halaman home
+    //   if (response.data.success) {
+    //     navigate.push('/home');
+    //   } else {
+    //     // Tampilkan pesan error 
+    //     alert('Login failed. Please check your credentials.');
+    //   }
+    // } catch (error) {
+    //   console.error('Error during login:', error);
+    //   alert('An error occurred. Please try again later.');
+    // }
   };
 
   const handleGoogleLogin = async () => {

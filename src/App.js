@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
 import Home from './Home';
+import ReviewThis from './Review';
 
 const App = () => {
+
   const slides = [
     { url: "http://localhost:3000/banner1.jpeg", title: "Banner1" },
     { url: "http://localhost:3000/banner2.jpeg", title: "Banner2" },
@@ -17,8 +19,10 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home status='logout' />} />
+          <Route path="/home" element={<Home status='login' />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/reviewthis" element={<ReviewThis />} />
         </Routes>
       </Router>
     </div>
@@ -26,20 +30,3 @@ const App = () => {
 };
 
 export default App;
-
-const Navbar = () => {
-  return(
-    <header>
-        <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
-
-        <input type="text" placeholder="Find Products..." className='search-bar'/>
-
-        <div className='button-and-notif'>
-            <button className='pink-button' style={{ }}><a href='/login'>Login / Signup</a></button>
-            <button className='icon-button'>
-              <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" className='icon'/>
-            </button>
-        </div> 
-      </header>
-  )
-}

@@ -1,12 +1,14 @@
 // Home.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 import ImageSlider from './imgslider';
 import MakeupReviewSection from './makeupreview';
+import Footer from './Footer';
 import './App.css';
 import './Home.css';
 
-const Home = () => {
+const Home = ({status}) => {
   const [makeupReviews, setMakeupReviews] = useState([]);
 
   useEffect(() => {
@@ -33,19 +35,7 @@ const Home = () => {
     <div>
 
       {/* Header Section */}
-      <header>
-        <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
-
-        <input type="text" placeholder="Find Products..." className='search-bar'/>
-
-        <div className='button-and-notif'>
-            <button className='pink-button' style={{ }}><a href='/login'>Login / Signup</a></button>
-            <button className='icon-button'>
-              <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" className='icon'/>
-            </button>
-        </div> 
-      </header>
-  
+      <Navbar status={status} />
 
       {/* Slider Section */}
       <div style={{ marginTop: '120px' }}> 
@@ -81,19 +71,8 @@ const Home = () => {
         <MakeupReviewSection makeupReviews={makeupReviews} />
       </div> */}
       
-      <footer>
-        <div className='company-name'>
-          <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
-          <h1>Skinmates</h1>
-        </div>
-        <div className='footer-links'>
-          <a>Home</a><hr></hr>
-          <a>Reviews</a><hr></hr>
-          <a>Profile</a>
-        </div>
-        {/* <hr></hr> */}
-        <p>Copyright ©2023 Skinmates. All rights reserved.</p>
-      </footer>
+      {/* Footer Section */ }
+      <Footer status={status} />
 
     </div>
   );
