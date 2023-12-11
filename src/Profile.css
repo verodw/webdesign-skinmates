@@ -1,0 +1,71 @@
+.profile {
+    background-color: #e2eeff33;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .profile .div {
+    background-color: #e2eeff33;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .profile .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile .overlap-group {
+    background-color: #fdaabe;
+    border-radius: 125px;
+    height: 230px;
+    width: 230px;
+  }
+  
+  .profile .avatar {
+    height: 178px;
+    width: 185px;
+  }
+  
+  .profile .text-container {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile .text-wrapper {
+    color: #000000;
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 12px;
+  }
+  
+  .profile .christine-putri {
+    color: #252525;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .profile .span {
+    color: #252525;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .profile .text-wrapper-11 {
+    color: #000000;
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+
+  

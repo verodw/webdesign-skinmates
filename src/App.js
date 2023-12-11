@@ -4,6 +4,7 @@ import Register from './Register';
 import Login from './Login';
 import Home from './Home';
 import ReviewThis from './Review';
+import Profile from './Profile';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/home" element={<Home status='login' />} />
           <Route path="/register" element={<Register />} />
           <Route path="/reviewthis" element={<ReviewThis />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
     </div>
