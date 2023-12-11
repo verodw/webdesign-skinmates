@@ -1,12 +1,16 @@
 :root {
-    --orangepink: #FFA69E;
-    --pink1: #F8B4BC;
-    --pink2: #D8AAB7;
-    --white: #FFFFFF;
-    --lightgrey: #F5F5F5;
-    --grey: #BDBDBD;
-    --black: #000000;
-    --redpink: #FF5A5F;
+    --white: #fff;
+    --grey: #ccc;
+    --lightgrey: #f3f3f3;
+    --black: #000;
+    --lightpink: #FEE9EE;
+    --orangepink: #F7C9C8;
+    --darkpink: #CC848A;
+    --redpink: #FF5959;
+    --pink1: #FF707C;
+    --pink2: #D1666F;
+    --neutral-gray-900: rgba(15, 23, 42, 1);
+    --neutralgray-0: rgba(255, 255, 255, 1);
 }
 
 /* Profile Styles */
@@ -56,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--pink1);
+    background-color: var(--orangepink);
     border-radius: 125px;
     height: 230px;
     width: 230px;

@@ -11,14 +11,14 @@
   --pink2: #D1666F;
   --neutral-gray-900: rgba(15, 23, 42, 1);
   --neutralgray-0: rgba(255, 255, 255, 1);
-  --pink-1: rgba(254, 233, 238, 1);
+  /* --pink-1: rgba(254, 233, 238, 1);
   --pink-2: rgba(247, 235, 242, 1);
   --pink-blue: rgba(254, 233, 238, 1);
   --pink-red: rgba(254, 195, 187, 1);
   --pink-1: rgba(254, 233, 238, 1);
   --pink-2: rgba(247, 235, 242, 1);
   --pink-blue: rgba(254, 233, 238, 1);
-  --pink-red: rgba(254, 195, 187, 1);
+  --pink-red: rgba(254, 195, 187, 1); */
 }
 
 * {
@@ -119,13 +119,21 @@ button:hover {
 }
 
 a {
+  padding: 5px;
   text-decoration: none;
   font-weight: bold;
   color: var(--black);
 }
 
 a:hover {
-  text-shadow: 0px 4px 8px rgba(204, 132, 138, 0.5);
+  /* text-shadow: 0px 4px 8px rgba(204, 132, 138, 0.5); */
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(204, 132, 138, 0.5);
+}
+
+button a:hover {
+  background-color: transparent;
 }
 
 input {
@@ -202,7 +210,7 @@ footer p {
 }
 
 .see-more {
-  color: var(--pink2);
+  color: var(--darkpink);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -250,6 +258,7 @@ footer p {
 .footer-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 2rem;
 }
 
