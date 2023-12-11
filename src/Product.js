@@ -1,5 +1,7 @@
 // product.js
 import React from "react";
+import Footer from "./Footer";
+
 // Fungsi untuk mengambil data dari API
 async function fetchData() {
   try {
@@ -36,4 +38,4 @@ const Detail = () => {
   );
 };
 
-export default product;
+export default Product;
