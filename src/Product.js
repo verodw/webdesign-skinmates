@@ -1,5 +1,7 @@
 // product.js
 import React from "react";
+import Navbar from './Navbar';
+import Footer from './Footer';
 // Fungsi untuk mengambil data dari API
 async function fetchData() {
   try {
@@ -29,11 +31,15 @@ function displayData(data) {
 // Panggil fungsi fetchData untuk mendapatkan data dari API
 fetchData();
 
-const Detail = () => {
+const Product = () => {
   return(
-
-    <Footer status='product' />
+    <div>
+      <Navbar status='login' />
+      <h2>Product Page</h2>
+      {/* nanti masukin elemen" lain disini */}
+      <Footer status='login' />
+    </div>
   );
 };
 
-export default product;
+export default Product;

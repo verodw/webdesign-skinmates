@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const MakeupReview = ({ makeupReviews }) => {
 
   function toDetail(){
-    navigate('/detail')
+    navigate('/product/detail')
   }
 
   const navigate  = useNavigate();
