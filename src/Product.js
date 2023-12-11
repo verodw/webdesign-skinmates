@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./Footer";
 
 import Navbar from './Navbar';
-import Footer from './Footer';
+
 // Fungsi untuk mengambil data dari API
 async function fetchData() {
   try {
@@ -45,4 +45,4 @@ const Product = () => {
 };
 
 export default Product;
-export default Product;
+
