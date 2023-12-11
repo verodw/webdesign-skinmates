@@ -64,6 +64,9 @@
     border-radius: 125px;
     height: 230px;
     width: 230px;
+    margin-top: 20px;
+    margin-right: 65px;
+    margin-bottom: 35px;
 }
 
 .profile .avatar {
@@ -81,6 +84,7 @@
 .profile .text-container1 {
     margin-left: 16px; 
     text-align: left;
+    width: 80%;
     align-items: flex-start;
   }
 
@@ -100,6 +104,7 @@
     font-size: 24px;
     font-weight: 400;
     white-space: nowrap;
+    margin-top: 12px;
 }
 
 .profile .span {
@@ -115,6 +120,7 @@
     font-size: 20px;
     font-weight: 400;
     white-space: nowrap;
+    margin-top: 12px;
 }
 
 /* .profile .text-wrapper-1 {
