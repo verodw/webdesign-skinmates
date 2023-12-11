@@ -1,0 +1,12 @@
+.review-list {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 20px;
+}
+
+p {
+    margin: 0;
+}
