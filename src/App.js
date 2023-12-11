@@ -5,6 +5,7 @@ import Login from './Login';
 import Home from './Home';
 import ReviewThis from './Review';
 import Detail from './Detail';
+import Product from './Product';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/home" element={<Home status='login' />} />
           <Route path="/register" element={<Register />} />
           <Route path="/detail" element={<Detail />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/reviewthis" element={<ReviewThis />} />
         </Routes>
       </Router>
