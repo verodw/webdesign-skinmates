@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import ImageSlider from './imgslider';
 import MakeupReviewSection from './makeupreview';
-import Footer from './Footer';
 import './App.css';
 import './Home.css';
 
@@ -38,7 +38,7 @@ const Home = ({status}) => {
       <Navbar status={status} />
 
       {/* Slider Section */}
-      <div style={{ marginTop: '120px' }}> 
+      <div> 
         <ImageSlider slides={sliderImages} parentWidth={parentWidth} />
       </div>
 

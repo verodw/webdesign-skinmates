@@ -4,6 +4,7 @@ import Register from './Register';
 import Login from './Login';
 import Home from './Home';
 import ReviewThis from './Review';
+import Detail from './Detail';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Home status='logout' />} />
           <Route path="/home" element={<Home status='login' />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/detail" element={<Detail />} />
           <Route path="/reviewthis" element={<ReviewThis />} />
         </Routes>
       </Router>
