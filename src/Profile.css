@@ -1,0 +1,166 @@
+:root {
+    --orangepink: #FFA69E;
+    --pink1: #F8B4BC;
+    --pink2: #D8AAB7;
+    --white: #FFFFFF;
+    --lightgrey: #F5F5F5;
+    --grey: #BDBDBD;
+    --black: #000000;
+    --redpink: #FF5A5F;
+}
+
+/* Profile Styles */
+.profile {
+    background-color: var(--lightgrey);
+    width: 100%;
+}
+
+.profile .separator {
+    margin: 20px 0; 
+    border: none;
+    height: 1px;
+    /* background-color: #ccc;  */
+}
+
+.profile .line {
+    width: 100%; /* Mengatur lebar garis menjadi 100% dari lebar parent */
+    border: none;
+    height: 2px;
+    background-color: #ccc; 
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.profile .navbar {
+   
+}
+
+.profile .div {
+    background-color: var(--lightgrey);
+    height: 1024px;
+    position: relative;
+    max-width: 1440px; /* Max width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .flex-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile .overlap-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink1);
+    border-radius: 125px;
+    height: 230px;
+    width: 230px;
+}
+
+.profile .avatar {
+    height: 165px;
+    width: 165px;
+}
+
+.profile .text-container {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile .text-container1 {
+    margin-left: 16px; 
+    text-align: left;
+    align-items: flex-start;
+  }
+
+
+.profile .text-wrapper {
+    color: var(--black);
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 12px;
+}
+
+.profile .christine-putri {
+    color: var(--black);
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.profile .span {
+    color: var(--black);
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.profile .text-wrapper-11 {
+    color: var(--black);
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* .profile .text-wrapper-1 {
+    color: var(--black);
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    
+}
+
+.profile .text-wrapper-2 {
+    color: var(--black);
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    
+} */
+
+.profile .text-wrapper-1,
+.profile .text-wrapper-2 {
+    color: var(--black);
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: left;
+    margin: 0;
+}
+
+.profile .text-wrapper-2 {
+    font-family: "Lato-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.profile .header {
+   
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .profile .navbar {
+        padding: 20px;
+        height: auto;
+    }
+
+    .profile .text-container {
+        
+    }
+}
