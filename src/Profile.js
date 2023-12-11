@@ -1,14 +1,20 @@
 import React from "react";
 import "./Profile.css";
+import Navbar from './Navbar';
 import Footer from './Footer';
+import "./App.css";
 
 const Profile = () => {
   return (
     <div className="profile">
+      {/* Header Section */}
+      <Navbar status="login" />
+
       <div className="div">
         <div className="flex-container">
           <div className="overlap-group">
             <img className="avatar" alt="Avatar" src="avatar.png" />
+        
           </div>
           <div className="text-container">
             <div className="text-wrapper">Christine Putri</div>
@@ -23,34 +29,43 @@ const Profile = () => {
               </a>
             </p>
             <div className="text-wrapper-11">Reviews: 0</div>
+           
           </div>
+          
         </div>
-        <div className="text-wrapper-2">Account</div>
-        <hr className="line" />
-        <div className="text-wrapper-3">Edit Profile</div>
-        <hr className="line" />
-        <div className="text-wrapper-4">Notification Settings</div>
-        <hr className="line-2" />
-        <div className="text-wrapper-5">Connected Accounts</div>
-        <hr className="line-3" />
-        <div className="text-wrapper-6">App Permissions</div>
-        <hr className="line-2" />
-        <div className="text-wrapper-7">About the app</div>
-        <hr className="line-4" />
-        <div className="text-wrapper-8">Share with friends</div>
-        <hr className="line-5" />
-        <div className="text-wrapper-9">Clear cache</div>
-        <hr className="line-2" />
-        <div className="text-wrapper-10">App</div>
+
+        <div className="text-container1">
+       
+          <div className="text-wrapper-1">Account</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">Edit Profile</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">Notification Settings</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">Connected Accounts</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">App Permissions</div>
+          <hr className="line" />
+          
+          
+          <div className="separator"></div>
+
+          <div className="text-wrapper-1">App</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">About the app</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">Share with friends</div>
+          <hr className="line" />
+          <div className="text-wrapper-2">Clear cache</div>
+            
+        </div>
+        
       </div>
 
-      {/* Footer Section */ }
-      <Footer/>
-      
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 };
 
 export default Profile;
-
-
