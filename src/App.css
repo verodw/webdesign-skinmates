@@ -80,7 +80,7 @@
 
 header {
   border-bottom: 1px solid #ccc;
-  position: fixed; 
+  position: sticky; 
   top: 0; left: 0; right: 0; 
   padding: 35px;  
   background: #ffff; 
@@ -129,6 +129,7 @@ a:hover {
 
 input {
   width: 100%;
+  box-sizing: border-box;
   border: 1.5px solid var(--orangepink);
   padding: 10px 16px;
   border-radius: 100px;
@@ -141,6 +142,7 @@ input:focus {
 }
 
 footer {
+  background-color: var(--orangepink);
   padding: 35px;
   display: flex;
   flex-direction: column;

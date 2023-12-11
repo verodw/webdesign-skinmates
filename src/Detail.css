@@ -1,0 +1,19 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-part {
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    justify-content: space-between;
+}
+
+.product-side {
+    width: 50%;
+}
+
+.review-side {
+    width: 50%;
+}
