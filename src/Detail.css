@@ -11,9 +11,14 @@
 }
 
 .product-side {
-    width: 50%;
+    width: 45%;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
 }
 
 .review-side {
-    width: 50%;
+    width: 45%;
 }
