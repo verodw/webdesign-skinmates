@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
 import Home from './Home';
@@ -7,6 +7,7 @@ import ReviewThis from './Review';
 import Profile from './Profile';
 import Detail from './Detail';
 import Product from './Product';
+import MakeupReview from './makeupreview';
 
 const App = () => {
 
@@ -25,7 +26,8 @@ const App = () => {
           <Route path="/" element={<Home status='logout' />} />
           <Route path="/home" element={<Home status='login' />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product" element={<Product status='logout' />} />
+          <Route path="/product-login=true" element={<Product status='login' />} />
           <Route path="/product/detail" element={<Detail />} />
           <Route path="/reviewthis" element={<ReviewThis />} />
           <Route path="/profile" element={<Profile />} />

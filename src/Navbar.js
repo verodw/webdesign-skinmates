@@ -10,7 +10,7 @@ const Navbar = ({status}) => {
                 <input type="text" placeholder="Find Products..." className='search-bar'/>
 
                 <div className='button-and-notif'>
-                    <button className='pink-button' style={{ }}><a href='/login'>Login / Signup</a></button>
+                    <button className='pink-button'><a href='/login'>Login / Signup</a></button>
                     {/* <button className='icon-button'>
                         <img src={process.env.PUBLIC_URL + '/notification.png'} alt="Notification Icon" className='icon'/>
                     </button> */}
@@ -26,7 +26,7 @@ const Navbar = ({status}) => {
                 <input type="text" placeholder="Find Products..." className='search-bar'/>
 
                 <div className='button-and-notif'>
-                    <a href='/profile'>Profile</a>
+                    <button className='pink-button'><a href='/profile'>Profile</a></button>
                 </div> 
             </header>
         );

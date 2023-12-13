@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import './RegisLogin.css';
@@ -32,7 +31,7 @@ const Login = () => {
   };
 
   const handleGoogleLogin = async () => {
-    alert('Continue with Google clicked.');
+    navigate('/home');
   };
 
   return (
@@ -73,7 +72,7 @@ const Login = () => {
         </div>
 
         <div className='regis-part'>
-          <button className="light-button"><img src='/logo-google.png' className='icon'></img><a href='/'>Continue with Google</a></button>
+          <button className="light-button"><img src='/logo-google.png' className='icon' onClick={handleGoogleLogin}></img><a href='/'>Continue with Google</a></button>
           <p>
             Don't have an account? <a href="/register">Register</a>
           </p>

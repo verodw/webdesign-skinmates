@@ -1,21 +1,66 @@
 import React from 'react';
+import { useLocation} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ReviewList from './ReviewList';
 import './App.css';
 import './Detail.css';
 
+function validateStatus({status, navigate}){
+
+    if(status='logout'){
+        navigate('/login')
+        // alert('You have not logged in yet! Please log in first!')
+        // navigate('/login')
+    }
+}
+
 const Detail = () => {
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const product = location.state.product;
+    const status = location.state.status;
+
+    console.log('Location:', location);
+
+    console.log(product, status)
+
+    const validateStatus = () => {
+        if(status==='logout'){
+            alert('You have not logged in yet! Please log in first!')
+            navigate('/login')
+            return
+        }
+        
+        else if (status==='login'){
+            alert('Review has been posted!')
+            navigate('/home')
+            // navigate(
+            //     '/product/detail', 
+            //     {state: {
+            //       product: product,
+            //       status: status
+            // }}
+            // )
+            return
+        }
+    }
+
+    console.log(product.id)
+    console.log(status)
+
     return(
         <div className='detail'>
-            <Navbar status='login'/>
+            <Navbar status={status}/>
             <div className='product-part'>
                 <div className='product-side'>
-                    <h2>Product Name</h2>
-                    <img src='./logo-skinmates.png' className='product-img' alt='Product Image'/>
-                    <h4>Brand: Unknown</h4>
-                    <h4>Rating: null</h4>
-                    <p>Description ...</p>
+                    <h2>{product.name}</h2>
+                    <img src={product.api_featured_image} className='product-img' alt='Product Image'/>
+                    <h4>Brand: {product.brand}</h4>
+                    <h4>Rating: {product.rating}</h4>
+                    <p>{product.description}</p>
                 </div>
                 <div className='review-side'>
                     <h3>Post a Review</h3>
@@ -25,7 +70,7 @@ const Detail = () => {
                         <input type='text' placeholder='Input a number (max: 5.0)'></input>
                         <label>Review</label>
                         <textarea placeholder='Write your review'></textarea>
-                        <button className='pink-button'>Post</button>
+                        <button className='pink-button' onClick={validateStatus}>Post</button>
                     </form>
                     <h3>Other Reviews</h3>
                     <div className='review-list'>
@@ -33,7 +78,7 @@ const Detail = () => {
                     </div>
                 </div>
             </div>
-            <Footer status='login' />
+            <Footer status={status} />
         </div>
     );
 };

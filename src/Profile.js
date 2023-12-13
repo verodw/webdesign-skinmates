@@ -63,7 +63,7 @@ const Profile = () => {
       </div>
 
       {/* Footer Section */}
-      <Footer />
+      <Footer status='login'/>
     </div>
   );
 };

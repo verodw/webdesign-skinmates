@@ -93,6 +93,10 @@ header {
   box-shadow: 0px 4px 20px var(--lightgrey);
 }
 
+footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
   margin: 0;
 }
@@ -209,12 +213,19 @@ footer p {
   color: var(--white);
 }
 
+.see-more-section {
+  display: flex;
+  justify-content: center;
+}
+
 .see-more {
-  color: var(--darkpink);
+  color: var(--pink2);
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  margin: 20px 0;
+  width: fit-content;
 }
 
 .search-bar {

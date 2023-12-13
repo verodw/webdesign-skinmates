@@ -4,12 +4,13 @@ import './App.css';
 const Footer = ({status}) => {
     
     var linkHome = '/';
-    var linkProduct = '/';
-    var linkProfile = '/';
+    var linkProduct = '/product';
+    var linkProfile = '';
 
-    if(status=='login'){
+    if(status==='login'){
+        console.log('footer login')
         linkHome = '/home';
-        linkProduct = '/product';
+        linkProduct = '/product-login=true';
         linkProfile = '/profile';
     }
 

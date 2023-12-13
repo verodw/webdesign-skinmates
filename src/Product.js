@@ -1,45 +1,67 @@
 // product.js
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Footer from "./Footer";
-
 import Navbar from './Navbar';
+import MakeupReviewSection from './makeupreview';
+import './App.css';
+import './Home.css';
 
-// Fungsi untuk mengambil data dari API
-async function fetchData() {
-  try {
-    const apiUrl = 'https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.5&rating_less_than=4.2&price_greater_than=7.5&price_less_than=9.5';
-    const response = await fetch(apiUrl);
+const Product = ({status}) => {
 
-    if (!response.ok) {
-      throw new Error('Gagal mengambil data dari API');
-    }
+  const [makeupReviews, setMakeupReviews] = useState([]);
 
-    const data = await response.json();
-    displayData(data); // Panggil fungsi untuk menampilkan data
-  } catch (error) {
-    console.error('Error:', error.message);
-  }
-}
+  console.log(status)
 
-// Fungsi untuk menampilkan data ke dalam DOM
-function displayData(data) {
-  // Gantilah bagian ini sesuai dengan kebutuhan tampilan Anda
-  // Contoh: Menampilkan judul produk ke dalam console
-  data.forEach(product => {
-    console.log('Judul Produk:', product.name);
-  });
-}
+  useEffect(() => {
+    // Fetch makeup reviews from the API
+    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.0')
+      .then(response => {
+        setMakeupReviews(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching makeup reviews:', error);
+      });
+  }, []);
 
-// Panggil fungsi fetchData untuk mendapatkan data dari API
-fetchData();
-
-const Product = () => {
   return(
     <div>
-      <Navbar status='login' />
-      <h2>Product Page</h2>
-      {/* nanti masukin elemen" lain disini */}
-      <Footer status='login' />
+
+      {/* Header Section */}
+      <Navbar status={status} />
+
+      {/* Text Section */}
+    
+      <div className="category-section">
+      <h1 style={{margin: '50px'}}>
+        Begin your beauty journey here.
+      </h1>
+      </div>
+      
+
+      <div className="categories">
+        <div className="category-item">Blush</div>
+        <div className="category-item">Bronzer</div>
+        <div className="category-item">Eyebrow</div>
+        <div className="category-item">Eyeliner</div>
+        <div className="category-item">Eyeshadow</div>
+        <div className="category-item">Foundation</div>
+        <div className="category-item">Lip liner</div>
+        <div className="category-item">Lipstick</div>
+        <div className="category-item">Mascara</div>
+        <div className="category-item">Nail polish</div>
+      </div>
+
+
+      {/* Makeup Reviews Section */}
+      <MakeupReviewSection makeupReviews={makeupReviews} status={status}/>
+      {/* <div className="makeup-review-container">
+        <MakeupReviewSection makeupReviews={makeupReviews} />
+      </div> */}
+      
+      {/* Footer Section */ }
+      <Footer status={status} />
+
     </div>
   );
 };

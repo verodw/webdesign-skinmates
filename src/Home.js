@@ -31,6 +31,11 @@ const Home = ({status}) => {
 
   const parentWidth = window.innerWidth; 
 
+  var seemorelink = '/product';
+  if(status=='login'){
+    seemorelink = '/product-login=true';
+  }
+
   return (
     <div>
 
@@ -52,25 +57,27 @@ const Home = ({status}) => {
       
 
       <div className="categories">
-        <div className="category-item">Makeup</div>
-        <div className="category-item">Cleanser</div>
-        <div className="category-item">Toner</div>
-        <div className="category-item">Moisturizer</div>
-        <div className="category-item">Serums</div>
-        <div className="category-item">Sunscreen</div>
-        <div className="category-item">Mask</div>
-        <div className="category-item">Eyecream</div>
-        <div className="category-item">Exfoliator</div>
-        <div className="category-item">Lip Balm</div>
+        <div className="category-item">Blush</div>
+        <div className="category-item">Bronzer</div>
+        <div className="category-item">Eyebrow</div>
+        <div className="category-item">Eyeliner</div>
+        <div className="category-item">Eyeshadow</div>
+        <div className="category-item">Foundation</div>
+        <div className="category-item">Lip liner</div>
+        <div className="category-item">Lipstick</div>
+        <div className="category-item">Mascara</div>
+        <div className="category-item">Nail polish</div>
       </div>
 
 
       {/* Makeup Reviews Section */}
-      <MakeupReviewSection makeupReviews={makeupReviews} />
+      <MakeupReviewSection makeupReviews={makeupReviews} status={status}/>
       {/* <div className="makeup-review-container">
         <MakeupReviewSection makeupReviews={makeupReviews} />
       </div> */}
-      
+      <div className='see-more-section'>
+        <a className='see-more' href={seemorelink}>See more<img src='/arrow-next.png'></img></a>
+      </div>
       {/* Footer Section */ }
       <Footer status={status} />
 

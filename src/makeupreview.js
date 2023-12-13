@@ -3,10 +3,19 @@ import React from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
 
-const MakeupReview = ({ makeupReviews }) => {
+const MakeupReview = ({ makeupReviews, status }) => {
 
-  function toDetail(){
-    navigate('/product/detail')
+  function toDetail(product){
+    // var link = '/product/detail/'
+    // link += product_id
+    // navigate(link)
+
+    navigate(
+      '/product/detail', 
+      {state: {
+        product: product,
+        status: status
+      }})
   }
 
   const navigate  = useNavigate();
@@ -17,7 +26,7 @@ const MakeupReview = ({ makeupReviews }) => {
       <div className="review-list">
         {makeupReviews.map((review, index) => (
           <div className='makeup-product'>
-            <div key={review.id} className="makeup-review" onClick={() => toDetail()}>
+            <div key={review.id} className="makeup-review" onClick={() => toDetail(review)}>
               <div className='makeup-card'>
                 <img className='makeup-image'
                   src={review.api_featured_image}
@@ -35,7 +44,6 @@ const MakeupReview = ({ makeupReviews }) => {
           </div>
         ))}
       </div>
-      <a className='see-more' href=''>See more<img src='/arrow-next.png'></img></a>
     </div>
   );
 }
