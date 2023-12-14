@@ -78,6 +78,14 @@
   }
 }
 
+.img-logo {
+  pointer-events: none;
+}
+
+.img-logo:hover {
+  background: none
+}
+
 header {
   border-bottom: 1px solid #ccc;
   position: sticky; 
