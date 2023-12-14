@@ -1,6 +1,7 @@
-// // Home.js
+ // Home.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ImageSlider from './imgslider';
@@ -56,7 +57,7 @@ const Home = ({status}) => {
       </div>
       
 
-      <div className="categories">
+      {/* <div className="categories">
         <div className="category-item">Blush</div>
         <div className="category-item">Bronzer</div>
         <div className="category-item">Eyebrow</div>
@@ -67,6 +68,45 @@ const Home = ({status}) => {
         <div className="category-item">Lipstick</div>
         <div className="category-item">Mascara</div>
         <div className="category-item">Nail polish</div>
+      </div> */}
+
+      {/* Kategori Tautan */}
+      <div className="categories">
+        {/* Kembali ke halaman utama */}
+        {/* <Link to="/home" className="category-item">
+          All
+        </Link> */}
+        {/* Tautan berdasarkan kategori */}
+        <Link to="/home/blush" className="category-item">
+          Blush
+        </Link>
+        <Link to="/home/bronzer" className="category-item">
+          Bronzer
+        </Link>
+        <Link to="/home/eyebrow" className="category-item">
+          Eyebrow
+        </Link>
+        <Link to="/home/eyeliner" className="category-item">
+          Eyeliner
+        </Link>
+        <Link to="/home/eyeshadow" className="category-item">
+          Eyeshadow
+        </Link>
+        <Link to="/home/foundation" className="category-item">
+          Foundation
+        </Link>
+        <Link to="/home/lip_liner" className="category-item">
+          Lip Liner
+        </Link>
+        <Link to="/home/lipstick" className="category-item">
+          Lipstick
+        </Link>
+        <Link to="/home/mascara" className="category-item">
+          Mascara
+        </Link>
+        <Link to="/home/nail_polish" className="category-item">
+          Nail Polish
+        </Link>
       </div>
 
 

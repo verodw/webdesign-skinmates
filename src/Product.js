@@ -80,7 +80,7 @@ import './Home.css';
 const Product = ({ status }) => {
   const [makeupReviews, setMakeupReviews] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10; // Sesuaikan dengan jumlah item per halaman
+  const itemsPerPage = 5; // Sesuaikan dengan jumlah item per halaman
 
   useEffect(() => {
     // Fetch makeup reviews from the API

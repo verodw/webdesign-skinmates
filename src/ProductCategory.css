@@ -1,0 +1,87 @@
+/* ProductCategory.css */
+
+/* Container for the entire product category page */
+.product-category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns in a row */
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .product-category-title {
+    text-align: center; /* Menengahkan teks */
+    margin: 20px; /* Memberi jarak bawah */
+    font-size: 24px; /* Ukuran font */
+    color: black; /* Warna teks */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Styling for each product item */
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #FEE9EE;
+  }
+  
+  /* Styling for product image */
+  .product-image {
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for product details (brand, name, price, product_type, product colors, and rating) */
+  .product-details {
+    font-size: 14px;
+  }
+
+  /* Styling for product colors */
+.product-colors {
+    display: flex;
+    gap: 8px; /* Jarak antara lingkaran warna */
+  }
+  
+  .product-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc; /* Warna default jika data warna tidak ada */
+  }
+  
+  /* Styling for other product information (brand, name, price, rating) */
+  .product-info {
+    margin-top: 10px;
+    
+  }
+
+  .brand {
+    color: #FF5959;
+    font-size: medium;
+    font-style:calc();
+  }
+  
+  /* Styling for pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  

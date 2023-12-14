@@ -8,6 +8,7 @@ import Profile from './Profile';
 import Detail from './Detail';
 import Product from './Product';
 import MakeupReview from './makeupreview';
+import ProductCategory from './ProductCategory';
 
 const App = () => {
 
@@ -31,6 +32,11 @@ const App = () => {
           <Route path="/product/detail" element={<Detail />} />
           <Route path="/reviewthis" element={<ReviewThis />} />
           <Route path="/profile" element={<Profile />} />
+
+          
+          {/* Rute untuk setiap kategori */}
+          <Route path="/home/:category" element={<ProductCategory />} />
+
         </Routes>
       </Router>
     </div>
