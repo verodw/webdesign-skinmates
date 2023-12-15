@@ -82,7 +82,7 @@
   pointer-events: none;
 }
 
-.img-logo:hover {
+header a:hover {
   background: none
 }
 

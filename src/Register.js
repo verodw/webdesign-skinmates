@@ -116,8 +116,8 @@ const Register = () => {
   const handleRegister = () => {
     if (isFormValid()) {
       // Your registration logic here
-      // navigate('/home');
       setSuccess(true);
+      navigate('/home');
     } else {
       alert('Please fix the errors in the form before submitting.');
     }
@@ -179,7 +179,7 @@ const Register = () => {
         </div>
 
         <div className='login-part'>
-          <button className="light-button"><img src='/logo-google.png' className='icon'></img><a href='/'>Continue with Google</a></button>
+          <button className="light-button"><img src='/logo-google.png' className='icon'></img><a href='/home'>Continue with Google</a></button>
           <p>
             Already have an account? <a href="/login">Login</a>
           </p>
@@ -192,83 +192,3 @@ const Register = () => {
 };
 
 export default Register;
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-// import { useNavigate } from 'react-router-dom';
-// import './App.css';
-// import './RegisLogin.css';
-
-// import React from "react";
-// import { Check } from "./Check";
-// import { EyeOff } from "./EyeOff";
-// import { IconComponentNode } from "./IconComponentNode";
-// import "./Register.css";
-
-// export const Register = () => {
-//   return (
-//     <div className="register">
-//       <div className="div">
-//         <div className="text-wrapper">Create Your Account</div>
-//         <div className="frame">
-//           <img className="line" alt="Line" src="line-1.svg" />
-//           <div className="text-wrapper-2">or</div>
-//           <img className="line" alt="Line" src="line-2.svg" />
-//         </div>
-//         <div className="overlap">
-//           <div className="rectangle" />
-//           <div className="text-wrapper-3">First Name</div>
-//         </div>
-//         <div className="overlap-group">
-//           <div className="rectangle" />
-//           <div className="text-wrapper-3">Password</div>
-//           {/* <EyeOff className="eye-off" /> */}
-//         </div>
-//         <div className="overlap-2">
-//           <div className="rectangle-2" />
-//           <div className="text-wrapper-4">Confirm Password</div>
-//           {/* <IconComponentNode className="eye-off-instance" /> */}
-//         </div>
-//         <div className="overlap-3">
-//           <div className="rectangle-3" />
-//           <div className="text-wrapper-3">Email</div>
-//         </div>
-//         <div className="overlap-4">
-//           <div className="rectangle" />
-//           <div className="text-wrapper-3">Last Name</div>
-//         </div>
-//         <div className="group">
-//           <div className="div-wrapper">
-//             <div className="text-wrapper-5">Create Account</div>
-//           </div>
-//         </div>
-//         <div className="frame-2">
-//           <button className="button">
-//             <div className="frame-3">
-//               <img className="icon" alt="Icon" src="icon.svg" />
-//               <div className="label">Continue with Google</div>
-//             </div>
-//           </button>
-//           <p className="already-have-an">
-//             <span className="span">Already have an account? </span>
-//             <span className="text-wrapper-6">Login</span>
-//           </p>
-//         </div>
-//         <div className="group-2">
-//           <div className="control-help">
-//             {/* <Check className="check-instance" /> */}
-//           </div>
-//           <p className="i-agree-to-the-terms">
-//             <span className="text-wrapper-7">I agree to the </span>
-//             <span className="text-wrapper-8">Terms &amp; Conditions</span>
-//             <span className="text-wrapper-7"> and </span>
-//             <span className="text-wrapper-8">Privacy Policy</span>
-//           </p>
-//         </div>
-//         <img src={process.env.PUBLIC_URL + '/logo-skinmates.png'} alt="Skinmates Logo" className='img-logo'/>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Register;

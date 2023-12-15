@@ -57,9 +57,10 @@ const Profile = () => {
           <div className="text-wrapper-2">Share with friends</div>
           <hr className="line" />
           <div className="text-wrapper-2">Clear cache</div>
-            
         </div>
         
+        <a href='/' className='logout'>Logout</a>
+
       </div>
 
       {/* Footer Section */}

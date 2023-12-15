@@ -6,10 +6,6 @@ import { useNavigate } from 'react-router-dom';
 const MakeupReview = ({ makeupReviews, status }) => {
 
   function toDetail(product){
-    // var link = '/product/detail/'
-    // link += product_id
-    // navigate(link)
-
     navigate(
       '/product/detail', 
       {state: {

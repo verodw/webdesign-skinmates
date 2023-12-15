@@ -66,7 +66,7 @@ const PaginationComponent = ({ totalItems, itemsPerPage, currentPage, onPageChan
 
   return (
     <ul className="pageNumbers">
-      <li>
+      <li className="previous-btn">
         <button
           onClick={handlePrevbtn}
           disabled={currentPage === pages[0]}
@@ -77,7 +77,7 @@ const PaginationComponent = ({ totalItems, itemsPerPage, currentPage, onPageChan
       {pageDecrementBtn}
       {renderPageNumbers}
       {pageIncrementBtn}
-      <li>
+      <li className="next-btn">
         <button
           onClick={handleNextbtn}
           disabled={currentPage === pages[pages.length - 1]}

@@ -37,6 +37,23 @@ const Home = ({status}) => {
     seemorelink = '/product-login=true';
   }
 
+  var blushLink = '/blush'; var bronzerLink='/bronzer'; var eyebrowLink='/eyebrow'; var eyelinerLink='/eyeliner';
+  var eyeshadowLink = '/eyeshadow'; var foundationLink='/foundation'; var liplinerLink='/lip_liner'; var lipstickLink='/lipstick'; 
+  var mascaraLink='/mascara'; var nailpolishLink='/nail_polish'; 
+
+  if(status=='login'){
+    var blushLink = '/home/blush';
+    var bronzerLink='/home/bronzer'; 
+    var eyebrowLink='/home/eyebrow'; 
+    var eyelinerLink='/home/eyeliner';
+    var eyeshadowLink = '/home/eyeshadow'; 
+    var foundationLink='/home/foundation'; 
+    var liplinerLink='/home/lip_liner'; 
+    var lipstickLink='/home/lipstick'; 
+    var mascaraLink='/home/mascaralink'; 
+    var nailpolishLink='/home/nail_polish';
+  }
+
   return (
     <div>
 
@@ -55,56 +72,37 @@ const Home = ({status}) => {
         Begin your beauty journey here.
       </h1>
       </div>
-      
-
-      {/* <div className="categories">
-        <div className="category-item">Blush</div>
-        <div className="category-item">Bronzer</div>
-        <div className="category-item">Eyebrow</div>
-        <div className="category-item">Eyeliner</div>
-        <div className="category-item">Eyeshadow</div>
-        <div className="category-item">Foundation</div>
-        <div className="category-item">Lip liner</div>
-        <div className="category-item">Lipstick</div>
-        <div className="category-item">Mascara</div>
-        <div className="category-item">Nail polish</div>
-      </div> */}
 
       {/* Kategori Tautan */}
       <div className="categories">
-        {/* Kembali ke halaman utama */}
-        {/* <Link to="/home" className="category-item">
-          All
-        </Link> */}
-        {/* Tautan berdasarkan kategori */}
-        <Link to="/home/blush" className="category-item">
+        <Link to={blushLink} className="category-item" status={status}>
           Blush
         </Link>
-        <Link to="/home/bronzer" className="category-item">
+        <Link to={bronzerLink} className="category-item" status={status}>
           Bronzer
         </Link>
-        <Link to="/home/eyebrow" className="category-item">
+        <Link to={eyebrowLink} className="category-item" status={status}>
           Eyebrow
         </Link>
-        <Link to="/home/eyeliner" className="category-item">
+        <Link to={eyelinerLink} className="category-item" status={status}>
           Eyeliner
         </Link>
-        <Link to="/home/eyeshadow" className="category-item">
+        <Link to={eyeshadowLink} className="category-item" status={status}>
           Eyeshadow
         </Link>
-        <Link to="/home/foundation" className="category-item">
+        <Link to={foundationLink} className="category-item" status={status}>
           Foundation
         </Link>
-        <Link to="/home/lip_liner" className="category-item">
+        <Link to={liplinerLink} className="category-item" status={status}>
           Lip Liner
         </Link>
-        <Link to="/home/lipstick" className="category-item">
+        <Link to={lipstickLink} className="category-item" status={status}>
           Lipstick
         </Link>
-        <Link to="/home/mascara" className="category-item">
+        <Link to={mascaraLink} className="category-item" status={status}>
           Mascara
         </Link>
-        <Link to="/home/nail_polish" className="category-item">
+        <Link to={nailpolishLink} className="category-item" status={status}>
           Nail Polish
         </Link>
       </div>
@@ -112,9 +110,6 @@ const Home = ({status}) => {
 
       {/* Makeup Reviews Section */}
       <MakeupReviewSection makeupReviews={makeupReviews} status={status}/>
-      {/* <div className="makeup-review-container">
-        <MakeupReviewSection makeupReviews={makeupReviews} />
-      </div> */}
       <div className='see-more-section'>
         <a className='see-more' href={seemorelink}>See more<img src='/arrow-next.png'></img></a>
       </div>
@@ -126,96 +121,3 @@ const Home = ({status}) => {
 };
 
 export default Home;
-
-// Home.js
-// import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import Navbar from './Navbar';
-// import Footer from './Footer';
-// import ImageSlider from './imgslider';
-// import MakeupReviewSection from './makeupreview';
-// import PaginationComponent from './Pagination'; 
-// import './App.css';
-// import './Home.css';
-
-// const Home = ({ status }) => {
-//   const [makeupReviews, setMakeupReviews] = useState([]);
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const itemsPerPage = 10;
-
-//   // Define sliderImages
-//   const sliderImages = [
-//     { url: process.env.PUBLIC_URL + '/banner1.jpeg' },
-//     { url: process.env.PUBLIC_URL + '/banner2.jpeg' },
-//     { url: process.env.PUBLIC_URL + '/banner3.jpeg' },
-//     { url: process.env.PUBLIC_URL + '/banner4.jpeg' },
-//   ];
-
-//   useEffect(() => {
-//     // Fetch makeup reviews from the API
-//     axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.5&rating_less_than=4.2&price_greater_than=7.5&price_less_than=9.5')
-//       .then(response => {
-//         setMakeupReviews(response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching makeup reviews:', error);
-//       });
-//   }, []);
-
-//   const indexOfLastItem = currentPage * itemsPerPage;
-//   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-//   const currentItems = makeupReviews.slice(indexOfFirstItem, indexOfLastItem);
-
-//   const handlePageChange = (pageNumber) => {
-//     setCurrentPage(pageNumber);
-//   };
-
-//   const parentWidth = window.innerWidth;
-
-//   var seemorelink = '/product';
-//   if (status === 'login') {
-//     seemorelink = '/product-login=true';
-//   }
-
-//   return (
-//     <div>
-//       {/* Header Section */}
-//       <Navbar status={status} />
-
-//       {/* Slider Section */}
-//       <div> 
-//        <ImageSlider slides={sliderImages} parentWidth={parentWidth} />
-//       </div>
-
-//       {/* Text Section */}
-//       <div className="category-section">
-//         <h1 style={{ margin: '50px' }}>
-//           Begin your beauty journey here.
-//         </h1>
-//       </div>
-
-//       <div className="categories">
-//         {/* Categories go here */}
-//       </div>
-
-//       {/* Makeup Reviews Section */}
-//       <MakeupReviewSection makeupReviews={currentItems} status={status} />
-//       <div className='see-more-section'>
-//         <a className='see-more' href={seemorelink}>See more<img src='/arrow-next.png'></img></a>
-//       </div>
-
-//       {/* Custom Pagination Component */}
-//       <PaginationComponent
-//         totalItems={makeupReviews.length}
-//         itemsPerPage={itemsPerPage}
-//         currentPage={currentPage}
-//         onPageChange={handlePageChange}
-//       />
-
-//       {/* Footer Section */}
-//       <Footer status={status} />
-//     </div>
-//   );
-// };
-
-// export default Home;

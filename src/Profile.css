@@ -163,6 +163,11 @@
    
 }
 
+.logout {
+    margin-top: 50px;
+    font-size: larger;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     .profile .navbar {
