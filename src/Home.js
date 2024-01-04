@@ -14,7 +14,7 @@ const Home = ({status}) => {
 
   useEffect(() => {
     // Fetch makeup reviews from the API
-    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.5&rating_less_than=4.2&price_greater_than=7.5&price_less_than=9.5')
+    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.5&rating_less_than=4.2&price_greater_than=5.0&price_less_than=7.5')
       .then(response => {
         setMakeupReviews(response.data);
       })

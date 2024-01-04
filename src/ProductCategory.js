@@ -84,10 +84,11 @@ const ProductCategory = ({ status }) => {
                 <strong>{product.name}</strong>
                 <p className="brand">{product.brand}</p>
                 <p className="price">{product.price_sign}{product.price}</p>
-                <p className='category'>{product.category}</p>
+                <p className='category'>Type: {product.category}</p>
                 {/* Menambahkan lingkaran warna untuk setiap warna produk */}
                 {product.product_colors && (
                   <div className="color-list">
+                    <p>Colours:</p>
                     {product.product_colors.map((color, colorIndex) => (
                       <div
                         key={colorIndex}

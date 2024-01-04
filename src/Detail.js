@@ -59,6 +59,28 @@ const Detail = () => {
                     <h2>{product.name}</h2>
                     <img src={product.api_featured_image} className='product-img' alt='Product Image'/>
                     <h4>Brand: {product.brand}</h4>
+                    <h4>Price: {product.price}</h4>
+                    <h4>Category: {product.category}</h4>
+                    {product.product_colors && (
+                    <div className="color-list">
+                        <p>Colours:</p>
+                        {product.product_colors.map((color, colorIndex) => (
+                        <div
+                            key={colorIndex}
+                            className="color"
+                            style={{
+                            backgroundColor: color.hex_value,
+                            width: '20px',
+                            height: '20px',
+                            borderRadius: '50%',
+                            display: 'inline-block',
+                            marginRight: '5px',
+                            }}
+                            title={color.colour_name}
+                        ></div>
+                        ))}
+                    </div>
+                    )}
                     <h4>Rating: {product.rating}</h4>
                     <p>{product.description}</p>
                 </div>
