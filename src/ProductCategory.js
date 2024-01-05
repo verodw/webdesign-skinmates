@@ -17,8 +17,6 @@ const ProductCategory = ({ status }) => {
   const { category } = useParams(); // ambil parameter kategori dari URL
 
   useEffect(() => {
-    // Gunakan parameter kategori untuk membuat URL API yang sesuai  
-    // const apiUrl = `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${category}`;
 
     const apiUrl = searchTerm
       ? `https://makeup-api.herokuapp.com/api/v1/products.json?product_name=${searchTerm}`
@@ -51,10 +49,6 @@ const ProductCategory = ({ status }) => {
         status: status
       }})
   }
-
-//   const handleSearchChange = (searchValue) => {
-//     setSearchTerm(searchValue);
-//   };
 
   var categoryFirstLetter = category.charAt(0).toUpperCase()
   var categoryStr = category.slice(1)

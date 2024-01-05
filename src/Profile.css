@@ -123,24 +123,6 @@
     margin-top: 12px;
 }
 
-/* .profile .text-wrapper-1 {
-    color: var(--black);
-    font-family: "Lato-Bold", Helvetica;
-    font-size: 20px;
-    font-weight: 600;
-    white-space: nowrap;
-    
-}
-
-.profile .text-wrapper-2 {
-    color: var(--black);
-    font-family: "Lato-Regular", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    white-space: nowrap;
-    
-} */
-
 .profile .text-wrapper-1,
 .profile .text-wrapper-2 {
     color: var(--black);

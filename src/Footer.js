@@ -25,7 +25,6 @@ const Footer = ({status}) => {
                 <a href={linkProduct}>Products</a><hr></hr>
                 <a href={linkProfile}>Profile</a>
             </div>
-            {/* <hr></hr> */}
             <p>Copyright ©2023 Skinmates. All rights reserved.</p>
         </footer>
     );

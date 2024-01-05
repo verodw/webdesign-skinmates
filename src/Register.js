@@ -173,9 +173,7 @@ const Register = () => {
         </form>
 
         <div className="divider-vertical">
-            {/* <img className="line" alt="Line" src="line-1.svg" /> */}
             <hr></hr>or<hr></hr>
-            {/* <img className="line" alt="Line" src="line-2.svg" /> */}
         </div>
 
         <div className='login-part'>

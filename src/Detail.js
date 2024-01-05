@@ -7,15 +7,6 @@ import ReviewList from './ReviewList';
 import './App.css';
 import './Detail.css';
 
-function validateStatus({status, navigate}){
-
-    if(status='logout'){
-        navigate('/login')
-        // alert('You have not logged in yet! Please log in first!')
-        // navigate('/login')
-    }
-}
-
 const Detail = () => {
 
     const location = useLocation();
@@ -37,13 +28,6 @@ const Detail = () => {
         else if (status==='login'){
             alert('Review has been posted!')
             navigate('/home')
-            // navigate(
-            //     '/product/detail', 
-            //     {state: {
-            //       product: product,
-            //       status: status
-            // }}
-            // )
             return
         }
     }
