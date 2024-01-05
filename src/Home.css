@@ -70,6 +70,7 @@
 .category-item:hover {
   background-color: #FF707C; 
   color: #FFff;
+  border-radius: 15px; /* membuat bentuk oval */
 }
 
 .review-list {

@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ status, onSearchChange }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearchChange = (e) => {
-    const value = e.target.value;
-    setSearchTerm(value);
+  // const handleSearchChange = (e) => {
+  //   const value = e.target.value;
+  //   setSearchTerm(value);
 
-    // Mengirim nilai pencarian ke parent component (ProductCategory)
-    onSearchChange(value);
-  };
+  //   // Mengirim nilai pencarian ke parent component (ProductCategory)
+  //   onSearchChange(value);
+  // };
 
   if (status === 'logout') {
     return (
@@ -24,8 +24,8 @@ const Navbar = ({ status, onSearchChange }) => {
           type="text"
           placeholder="Find Products..."
           className='search-bar'
-          value={searchTerm}
-          onChange={handleSearchChange}
+          // value={searchTerm}
+          // onChange={handleSearchChange}
         />
 
         <div className='button-and-notif'>
@@ -44,8 +44,8 @@ const Navbar = ({ status, onSearchChange }) => {
           type="text"
           placeholder="Find Products..."
           className='search-bar'
-          value={searchTerm}
-          onChange={handleSearchChange}
+          // value={searchTerm}
+          // onChange={handleSearchChange}
         />
 
         <div className='button-and-notif'>
