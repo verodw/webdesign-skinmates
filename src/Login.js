@@ -46,7 +46,7 @@ const Login = () => {
 
           <div className='input-components'>
             <label>Email:</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
           </div>
 
           <div className='input-components'>
@@ -54,8 +54,7 @@ const Login = () => {
             <input
               type={showPassword ? 'text' : 'password'}
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+              onChange={(e) => setPassword(e.target.value)} />
           </div>
           
           <label className='checkbox'>
@@ -66,9 +65,7 @@ const Login = () => {
         </form>
 
         <div className="divider-vertical">
-            {/* <img className="line" alt="Line" src="line-1.svg" /> */}
             <hr></hr>or<hr></hr>
-            {/* <img className="line" alt="Line" src="line-2.svg" /> */}
         </div>
 
         <div className='regis-part'>

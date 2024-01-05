@@ -14,7 +14,7 @@ const Product = ({ status }) => {
 
   useEffect(() => {
     // Fetch makeup reviews from the API
-    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=3.0')
+    axios.get('https://makeup-api.herokuapp.com/api/v1/products.json?rating_greater_than=0.5')
       .then(response => {
         setMakeupReviews(response.data);
       })
@@ -41,10 +41,6 @@ const Product = ({ status }) => {
         <h1 style={{ margin: '50px' }}>
           Begin your beauty journey here.
         </h1>
-      </div>
-
-      <div className="categories">
-        {/* Categories go here */}
       </div>
 
       {/* Makeup Reviews Section */}

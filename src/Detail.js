@@ -43,11 +43,11 @@ const Detail = () => {
                     <h2>{product.name}</h2>
                     <img src={product.api_featured_image} className='product-img' alt='Product Image'/>
                     <h4>Brand: {product.brand}</h4>
-                    <h4>Price: {product.price}</h4>
+                    <h4>Price: {product.price_sign}{product.price}</h4>
                     <h4>Category: {product.category}</h4>
                     {product.product_colors && (
                     <div className="color-list">
-                        <p>Colours:</p>
+                        <h4>Colours:</h4>
                         {product.product_colors.map((color, colorIndex) => (
                         <div
                             key={colorIndex}
@@ -73,9 +73,9 @@ const Detail = () => {
                     <form className='create-review-part'>
                         <label>Rating</label>
                         {/* <div className='' */}
-                        <input type='text' placeholder='Input a number (max: 5.0)'></input>
+                        <input type='number' step='0.1' placeholder='Input a number (max: 5.0)' required></input>
                         <label>Review</label>
-                        <textarea placeholder='Write your review'></textarea>
+                        <textarea type='text' placeholder='Write your review' required></textarea>
                         <button className='pink-button' onClick={validateStatus}>Post</button>
                     </form>
                     <h3>Other Reviews</h3>

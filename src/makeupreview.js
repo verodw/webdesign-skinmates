@@ -12,6 +12,7 @@ const MakeupReview = ({ makeupReviews, status }) => {
         product: product,
         status: status
       }})
+      console.log(product.price_sign)
   }
 
 
